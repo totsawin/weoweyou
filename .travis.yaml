@@ -1,0 +1,16 @@
+sudo: required
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "weoweyou"
+  env: "Weoweyou-env"
+  bucket_name: "elasticbeanstalk-us-east-2-503109812026"
+  bucket_path: "weoweyou"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
+
+
