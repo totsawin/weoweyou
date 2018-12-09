@@ -1,9 +1,16 @@
-language: node_js
+sudo: required
+addons:
+  chrome: stable
 
+language: node_js
 node_js:
   - "8"
 
-sudo: required
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng test
 
 services:
   - docker

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { dataService } from './data.service';
+import { DataService } from './data.service';
 
 describe('DataserviceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: dataService = TestBed.get(dataService);
+    const service: DataService = TestBed.get(DataService);
     expect(service).toBeTruthy();
   });
 });
